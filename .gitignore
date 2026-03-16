@@ -3,3 +3,5 @@ __pycache__/
 .ipynb_checkpoints/
 .env
 data/accidents_raw.csv
+data/US_Accidents_March23.csv
+data/US_Accidents_March23.csv
