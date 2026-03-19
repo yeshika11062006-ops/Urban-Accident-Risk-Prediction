@@ -300,3 +300,8 @@ Predicting high-risk accident situations can contribute to **safer road infrastr
 ---
 
 
+## Experiments & Observations
+- Initially applied K-Means clustering using latitude and longitude to identify accident hotspots
+- Results were inconsistent and not meaningful (~50% performance)
+- Decided to remove clustering approach and focus on supervised models
+- Final models (Random Forest, Decision Tree) gave significantly better results
