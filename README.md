@@ -305,3 +305,17 @@ Predicting high-risk accident situations can contribute to **safer road infrastr
 - Results were inconsistent and not meaningful (~50% performance)
 - Decided to remove clustering approach and focus on supervised models
 - Final models (Random Forest, Decision Tree) gave significantly better results
+## Uncertainty & Probability Analysis 
+
+In addition to standard classification, the model was extended to analyze prediction probabilities using the Random Forest classifier.
+
+- Used `predict_proba()` to obtain probability scores for accident risk
+- Each prediction is associated with a confidence level (e.g., 0.88 = 88% risk probability)
+- This enables better interpretation beyond binary predictions
+
+### Key Insights:
+- High probability predictions (>0.8) indicate strong model confidence  
+- Moderate probabilities (~0.4–0.6) highlight uncertain cases  
+- Some predictions are highly confident but incorrect, showing model limitations  
+
+This analysis helps in understanding uncertainty in real-world risk prediction systems and improves decision-making reliability.
